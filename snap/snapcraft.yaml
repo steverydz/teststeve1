@@ -1,0 +1,17 @@
+name: stevetest1
+title: steve-test-snap-title
+# base: core18
+base: bare
+build-base: core22
+version: "4.0.1"
+summary: The snap I use for testing
+description: |
+  This is the snap I use for development and testing
+grade: stable
+confinement: strict
+parts:
+  my-part:
+    plugin: nil
+architectures:
+  - build-on: arm64
+    build-for: arm64
